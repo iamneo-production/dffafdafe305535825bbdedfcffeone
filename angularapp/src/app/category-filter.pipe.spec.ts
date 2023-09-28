@@ -1,5 +1,5 @@
 import { pipe } from 'rxjs/internal/util/pipe';
-import { CategoryPipePipe } from '../app/category-pipe.pipe';
+import { CategoryPipePipe } from './category-pipe.pipe';
 import { MenuItem } from './menu/menu.component';
 
 describe('CategoryFilterPipe', () => {
