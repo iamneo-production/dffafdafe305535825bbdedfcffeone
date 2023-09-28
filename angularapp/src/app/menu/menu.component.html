@@ -1,0 +1,28 @@
+<!-- src/app/menu/menu.component.html -->
+<div style="background-color: bisque;">
+    <div class="menu-container">
+        <h2>Our Menu</h2>
+        
+        <div class="filter">
+          <button (click)="updateCategory('All')">All</button>
+          <button (click)="updateCategory('Appetizer')">Appetizers</button>
+          <button (click)="updateCategory('Main Course')">Main Courses</button>
+          <button (click)="updateCategory('Dessert')">Desserts</button>
+        </div>
+        
+        <div class="menu-items">
+          <div
+          class="menu-item"
+          *ngFor="let item of menuItems | categoryFilter:selectedCategory"
+          [ngClass]="{ 'centered-item': shouldCenterImage(item.category) }"
+        >
+            <img [src]="item.image" alt="{{ item.name }}" class="menu-item-image">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.category }}</p>
+            <p>Price: {{ item.price }}</p>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
