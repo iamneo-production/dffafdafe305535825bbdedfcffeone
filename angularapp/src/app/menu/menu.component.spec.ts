@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuComponent, MenuItem } from './menu.component';
 
-import { CategoryPipePipe } from '../category-pipe.pipe';
+import { CategoryFilterPipe } from '../category-filter.pipe';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -10,7 +10,7 @@ describe('MenuComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuComponent,CategoryPipePipe]
+      declarations: [MenuComponent,CategoryFilterPipe]
     });
     fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
