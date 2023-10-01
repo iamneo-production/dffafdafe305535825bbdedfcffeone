@@ -1,10 +1,10 @@
 import { pipe } from 'rxjs/internal/util/pipe';
-import { CategoryPipePipe } from './category-pipe.pipe';
+import { CategoryFilterPipe } from './category-filter.pipe';
 import { MenuItem } from './menu/menu.component';
 
 describe('CategoryFilterPipe', () => {
   it('create an instance', () => {
-    const pipe = new CategoryPipePipe();
+    const pipe = new CategoryFilterPipe();
     expect(pipe).toBeTruthy();
   });
   it('should return all items when category is "All"', () => {

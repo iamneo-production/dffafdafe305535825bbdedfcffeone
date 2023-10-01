@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
+import { CategoryPipePipe } from './category-pipe.pipe';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -10,8 +11,7 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent,
-        MenuComponent
+        MenuComponent,CategoryPipePipe
       ],
     }).compileComponents();
   });
